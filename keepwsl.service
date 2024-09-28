@@ -1,0 +1,8 @@
+[Unit]
+Description=keepwsl.service
+
+[Service]
+ExecStart=/mnt/c/Windows/System32/WindowsPowerShell/v1.0/powershell.exe Start-Process -NoNewWindow -FilePath "wsl" -ArgumentList "sleep", "infinity" -Wait
+
+[Install]
+WantedBy=multi-user.target
