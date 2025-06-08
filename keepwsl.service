@@ -2,7 +2,7 @@
 Description=keepwsl.service
 
 [Service]
-ExecStart=/mnt/c/Windows/System32/wsl.exe sleep infinity
+ExecStart=/mnt/c/Windows/System32/wsl.exe --exec sh -c "sleep infinity"
 
 [Install]
 WantedBy=default.target
