@@ -13,7 +13,7 @@ enabled = true
 
 ## Installation
 ```
-sh -c "curl -sS https://raw.githubusercontent.com/gardengim/keepwsl/main/install.sh"
+sudo sh -c "curl -sS https://raw.githubusercontent.com/gardengim/keepwsl/main/install.sh | sh"
 ```
 ```
 sudo systemctl daemon-reload
