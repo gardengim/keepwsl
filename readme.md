@@ -34,15 +34,26 @@ systemd=true
 enabled = true
 ```
 
-- Use control + X to exit, and Y to save the changes.
+- Use control + X to exit, 
+	- the editor will ask you if you want to save the file: press Y to save the changes.
+	- the editor will ask you the filename, press Enter to confirm the filename.
 
 ### 3. Installing the service
 
-- Then run the following commands to install the service:
+- Change the path path-to-service-file to the path of the service file Then run the following commands to install the service:
 ```
-sudo cp /mnt/c/path/to/service-file/keepwsl.service /etc/systemd/system/keepwsl.service
+sudo cp /mnt/path-to-service-file/keepwsl.service /etc/systemd/system/keepwsl.service
 sudo systemctl enable --now keepwsl
 ```
+
+- You can now leave the terminal by closing it or type exit.
+After that confirm that it keeps running by checking the status of wsl to confirm it is running:
+```
+wsl -l -v
+```
+
+The STATE should be "Running"
+
 ---
 ## To run every boot of windows
 
