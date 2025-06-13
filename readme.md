@@ -1,7 +1,7 @@
 # keepwsl
 A simple service to keep WSL alive
 
-## Requirement
+## Prerequisite
 ### `/etc/wsl.conf`
 ```conf
 [boot]
@@ -12,9 +12,12 @@ enabled = true
 ```
 
 ## Installation
-
-
-## Usage
+```
+sh -c "curl -sS https://raw.githubusercontent.com/gardengim/keepwsl/main/install.sh"
+```
+```
+sudo systemctl daemon-reload
+```
 ```
 sudo systemctl enable --now keepwsl
 ```
