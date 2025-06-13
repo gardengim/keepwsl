@@ -55,7 +55,3 @@ wsl -l -v
 The STATE should be "Running"
 
 ---
-## To run every boot of windows
-
-You can enable the wsl to start automatically at every boot of Windows by copying the startup.bat to
-%userprofile%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\startup.bat
