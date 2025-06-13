@@ -1,0 +1,1 @@
+curl -o /etc/systemd/system/keepwsl.service https://raw.githubusercontent.com/gardengim/keepwsl/main/keepwsl.service 
