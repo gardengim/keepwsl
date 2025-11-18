@@ -15,9 +15,10 @@ if [ ! -f /mnt/c/Windows/System32/wsl.exe ]; then
 fi
 
 # Download the keepwsl script
-curl -o /etc/systemd/system/keepwsl.service https://raw.githubusercontent.com/gardengim/keepwsl/main/keepwsl.service
+mkdir -p ~/.config/systemd/user
+curl -fsSL https://raw.githubusercontent.com/gardengim/keepwsl/main/keepwsl.service -o ~/.config/systemd/user/keepwsl.service
 
 echo To enable the service, run:
-echo sudo systemctl enable keepwsl.service
+echo sudo systemctl --user enable keepwsl.service
 echo To start the service, run:
-echo sudo systemctl start keepwsl.service
+echo sudo systemctl --user start keepwsl.service
