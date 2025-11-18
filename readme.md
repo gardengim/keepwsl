@@ -16,8 +16,8 @@ enabled = true
 sudo sh -c "curl -sS https://raw.githubusercontent.com/gardengim/keepwsl/main/install.sh | sh"
 ```
 ```
-sudo systemctl daemon-reload
+systemctl --user daemon-reload
 ```
 ```
-sudo systemctl enable --now keepwsl
+systemctl --user enable --now keepwsl
 ```
