@@ -19,6 +19,6 @@ mkdir -p ~/.config/systemd/user
 curl -fsSL https://raw.githubusercontent.com/gardengim/keepwsl/main/keepwsl.service -o ~/.config/systemd/user/keepwsl.service
 
 echo To enable the service, run:
-echo sudo systemctl --user enable keepwsl.service
+echo systemctl --user enable keepwsl.service
 echo To start the service, run:
-echo sudo systemctl --user start keepwsl.service
+echo systemctl --user start keepwsl.service
