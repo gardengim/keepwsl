@@ -2,10 +2,10 @@
 Description=keepwsl.service
 
 [Service]
-ExecStart=/mnt/c/Windows/System32/wsl.exe --exec sh -c "sleep infinity"
 Type=simple
+ExecStart=/mnt/c/Windows/System32/wsl.exe --exec /bin/sleep infinity
 Restart=always
-RestartSec=10
+RestartSec=5
 
 [Install]
-WantedBy=multi-user.target
+WantedBy=default.target
